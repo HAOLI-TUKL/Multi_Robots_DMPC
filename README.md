@@ -3,4 +3,6 @@ Cooperative control of the multiple mobile vehicles via distributed model predic
 # Simulation for Centralized Structure
 <img width="400" heigth="400" src="https://github.com/HAOLI-TUKL/Multi_Robots_DMPC/blob/master/pic/flower.gif"/>
 <img width="400" heigth="400" src="https://github.com/HAOLI-TUKL/Multi_Robots_DMPC/blob/master/pic/form_cen.gif">
+
 # Simulation for decentralized Structure
+<img width="400" heigth="400" src="https://github.com/HAOLI-TUKL/Multi_Robots_DMPC/blob/master/pic/decentralized01.gif">
