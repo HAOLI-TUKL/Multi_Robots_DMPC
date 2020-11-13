@@ -14,3 +14,7 @@ Decentralized structures contributes to faster solving of the optimization probl
 Three raspberry pi 4 are used for running the main programs while a Realsense D435 RGBD cameral and AprilTag system are used for localization.
 
 <img width="300" heigth="300" src="https://github.com/HAOLI-TUKL/Multi_Robots_DMPC/blob/master/pic/vehicle.jpeg">
+
+# Simple MPC Real Test
+
+<img width="450" heigth="650" src="https://github.com/HAOLI-TUKL/Multi_Robots_DMPC/blob/master/pic/mpc2.gif">
