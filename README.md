@@ -1,5 +1,5 @@
 # Multi_Robots_DMPC
-Cooperative control of the multiple mobile vehicles via distributed model predictive control to implement the following tasks including formation control, inter-vehicle obstacle avoidance and environment obstacle avoidance. Stability, feasibility and optimality must be guaranteed. For real test, these codes will be deployed in the three Raspberry PI 4. A cameral and AprilTags visual localization system are used for localisation. Codes and demos are not complete and are updating.
+Cooperative control of the multiple mobile vehicles via distributed model predictive control to implement the following tasks including formation control, inter-vehicle obstacle avoidance and environment obstacle avoidance. Stability, feasibility and optimality must be guaranteed. For real test, these codes will be deployed in the three Raspberry PI 4. A cameral and AprilTags visual localization system are used for localisation. Codes and demos are not complete and are debugged and kept updating.
 # Simulation for Centralized Structure
 Centralized structures usually leads to large optimization problem, which is time-consuming. The second graph below shows the case in which three vehicles are moving in the formation of a triangle.
 
@@ -15,6 +15,6 @@ Three raspberry pi 4 are used for running the main programs while a Realsense D4
 
 <img width="300" heigth="300" src="https://github.com/HAOLI-TUKL/Multi_Robots_DMPC/blob/master/pic/vehicle.jpeg">
 
-# Simple MPC Real Test
-
+# MPC Obstacle Avoidance Real Test
+The following animation shows the MPC implementation for obstacle avoidance, which is the importance fundation for DMPC of the multiple vehicles.
 <img width="450" heigth="650" src="https://github.com/HAOLI-TUKL/Multi_Robots_DMPC/blob/master/pic/mpc2.gif">
