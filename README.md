@@ -19,3 +19,7 @@ Three raspberry pi 4 are used for running the main programs while a Realsense D4
 The following animation shows the MPC implementation for obstacle avoidance, which is the important fundation for DMPC of the multiple vehicles.
 
 <img width="550" heigth="750" src="https://github.com/HAOLI-TUKL/Multi_Robots_DMPC/blob/master/pic/mpc3.gif">
+# DMPC Collision Avoidance and Formation Real Test
+
+Coming soon ...
+
