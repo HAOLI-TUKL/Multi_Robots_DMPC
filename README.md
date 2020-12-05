@@ -31,3 +31,5 @@ The following animation shows the DMPC implementation for two vehicles to avoid 
 The following animations show the DMPC implemetation for three vehicles to avoid inter-vehicles collision and approach their destination.
 
 <img width='550' heigth='750' src='https://github.com/HAOLI-TUKL/Multi_Robots_DMPC/blob/master/pic/three01.gif'>
+
+<img width='550' heigth='750' src='https://github.com/HAOLI-TUKL/Multi_Robots_DMPC/blob/master/pic/three02.gif'>
