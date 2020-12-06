@@ -21,14 +21,14 @@ The following animation shows the MPC implementation for obstacle avoidance, whi
 <img width="550" heigth="750" src="https://github.com/HAOLI-TUKL/Multi_Robots_DMPC/blob/master/pic/mpc3.gif">
 
 ## Trajectory Planning using the DMPC for Two Vehicles
-The following animation shows the DMPC implementation for two vehicles to avoid inter-vehicles collision and approach their destination.
+The following animation shows the DMPC implementation for two vehicles to avoid inter-vehicles collision and approach their destinations.
 
 <img width='550' heigth='750' src='https://github.com/HAOLI-TUKL/Multi_Robots_DMPC/blob/master/pic/twovehicles2.gif'>
 
 
 ## Trajectory Planning using the DMPC for Three Vehicles and the Formation Real Test
 
-The following animations show the DMPC implemetation for three vehicles to avoid inter-vehicles collision and approach their destination.
+The following animations show the DMPC implemetation for three vehicles to avoid inter-vehicles collision and approach their destinations.
 
 <img width='550' heigth='750' src='https://github.com/HAOLI-TUKL/Multi_Robots_DMPC/blob/master/pic/three01.gif'>
 
