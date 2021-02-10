@@ -41,30 +41,8 @@ namespace {
         {   assert( fg.size() ==  (m_ + p_ -1)*(3*N_+3) + 6*N_ + 7 + (m_ - 1)*(N_+1) + N_ + 1);
             assert( x.size()  == 5*(N_-1)+10 + (4*(N_-1)+8)*(m_ + p_) + (m_-1)*(N_+1) + N_ + 1  );
 
-/**	m vehicles; N horizon; N+1 groups states;N+1 groups input; overall vars: 5(N-1)+10 + (4(N-1)+8)(m + p) + (m-1)(N+1) + N + 1
-*	========= x y z linearvelocity angle
-*	vehicle 1 : (x0 x1 x2 x3 x4)(x5 x6 x7 x8 x9)...(x 5(N-1)+5,x 5(N-1)+6,x 5(N-1)+7,5(N-1)+8,5(N-1)+9) start_index: 0 ;end_index:5(N-1)+9;
-*
-*	========= plane_a0 plane_a1 plane_b soft_factor (inter-vehicles seperation planes)
-*	------ set var1 = 5(N-1)+10
-*	vehicle/neighbor 11 : (a0 a1 a2 a3)...(a 4(N-1)+4,a 4(N-1)+5,a 4(N-1)+6,a 4(N-1)+7 ) start_index: var1;end_index:var1+4(N-1)+7
-*	vehicle/neighbor 12 : (a0 a1 a2 a3)...(a 4(N-1)+4,a 4(N-1)+5,a 4(N-1)+6,a 4(N-1)+7) start_index: var1 + 4(N-1)+8;end_index:var1 + 4(N-1)+8+ 4(N-1)+7
-*	...
-* 	vehicle/neighbor 1m : (a0 a1 a2 a3)...(a 4(N-1)+4,a 4(N-1)+5,a 4(N-1)+6,a 4(N-1)+7) start_index: var1 + (4(N-1)+8)(m-1);end_index:var1 + (4(N-1)+8)(m-1)+ 4(N-1)+7
-*	
-*	========== vehicle-obstacles seperation planes
-*	------ set start = 5(N-1)+10 + (4(N-1)+8)m
-*	vehicle 11 : (a0 a1 a2 a3)...(a 4(N-1)+4,a 4(N-1)+5,a 4(N-1)+6,a 4(N-1)+7 ) start_index = start; end_index = start + 4(N-1)+7 ;
-*	vehicle 12 : start_index = start + 4(N-1)+8; end_index = start+ 4(N-1)+8 + 4(N-1)+7;
-*	vehicle 1p : start_index = start + (4(N-1)+8)(p-1); end_index = start+ (4(N-1)+8)(p-1)+ 4(N-1)+7;
-*
-*	========== soft factors for formation	
-*       ------ set start =  5(N-1)+10 + (4(N-1)+8)(m + p)
-*	vehicle 1: a0 a1 ... aN    start_index = start ; end_index = start + N
-*	vehicle 2: start_index = start+ (N+1) ; end_index = start + (N + 1) + N
-*	...
-*	vehicle m: start_index = start+ (m-1)(N+1) ; end_index = start +  (m-1)(N+1) + N
-**/
+
+
 
 	
 	std::vector<AD<double>> v_states;
@@ -212,7 +190,7 @@ namespace {
 			fg[j*3 + 2] = v_states[j*5+1] + 1.0/2.0 * (v_states[j*5+3]+v_states[j*5+4])*sin(v_states[j*5+2])*ts_ - v_states[j*5+6];
 			fg[j*3 + 3] = v_states[j*5+2] +1.0/d_*(v_states[j*5+4] - v_states[j*5+3])*ts_ - v_states[j*5+7];
 
-	
+
 
 #if 0
 		//std::cout<<" vvvvvvvvvv    "<<v_states[j*5+3]<<"  "<<v_states[j*5+4]<<std::endl;	
