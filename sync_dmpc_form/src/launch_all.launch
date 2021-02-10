@@ -1,0 +1,7 @@
+<launch>
+<node pkg="vehicle03" type="vehicle03" name="vehicle03" />
+<node pkg="vehicle02" type="vehicle02" name="vehicle02" output="screen"/>
+<node pkg="vehicle01" type="vehicle01" name="vehicle01" />
+
+
+</launch>
